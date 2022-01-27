@@ -1,10 +1,25 @@
-# The-Nifty-Note-Taker
-An organisational application to enable the user to save and retrieve their personal notes. 
+## The-Nifty-Note-Taker
+
+## Description
+An organisational application to enable the user to save, delete and view their personal notes, written with Express.  
+
+Deployed at:
+
+
+Repo on Github:
+
 
 ## Table Of Contents
 
-* Description
 * Installation
 * Usage
 * License
-* Contact
+* Screenshot
+
+## Installation
+To initalise Run node server.js
+
+## Usage
+Run from root file
+
+##Screenshots
