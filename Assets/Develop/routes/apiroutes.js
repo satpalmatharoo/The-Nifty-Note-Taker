@@ -1,7 +1,8 @@
 const router = require ("express").Router()
 const util = require ("util")
 const fs = require ("fs")
-const uuid = require ("uuid")
+const { v4: uuidv4 } = require('uuid');
+//const uuid = require ("uuid")
 
 
 const readFileAsync = util.promisify(fs.readFile)
@@ -21,7 +22,7 @@ router.post ("/notes", async(req,res) => {
    
     const notes = await readFileAsync ("db/db.json", "utf-8")
     const parsednotes =JSON.parse(notes) 
-    const newNote = {...req.body, id:uuid()}
+    const newNote = {...req.body, id:uuidv4()}
     const newNotes = [...parsednotes,newNote];
     writeFileAsync("db/db.json", JSON.stringify(newNotes))
     res.json(newNotes)
