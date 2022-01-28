@@ -6,7 +6,7 @@ An organisational application to enable the user to save, delete and view their 
 Deployed at:
 
 
-Repo on Github:
+Repo on Github:https://github.com/satpalmatharoo/The-Nifty-Note-Taker
 
 
 ## Table Of Contents
